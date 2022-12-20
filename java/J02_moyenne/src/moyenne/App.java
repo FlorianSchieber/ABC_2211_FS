@@ -8,25 +8,25 @@ public class App {
 		
 		//DECLARATION VARIABLES
 		
-		int number1;
-		int number2;
-		double mean;
+		int nombre1;
+		int nombre2;
+		double moyenne;
 		
 		Scanner sc = new Scanner(System.in);
 		
 		// DEBUT PROGRAMME
 		
-		System.out.println("Two number's mean computing program");
+		System.out.println("Programme de caclul de la moyenne de deux nombres");
 		
-		System.out.print("Please enter a first number : ");
-		number1 = sc.nextInt();
+		System.out.print("Veuillez saisir un premier nombre : ");
+		nombre1 = sc.nextInt();
 		
-		System.out.print("Please enter a second number : ");
-		number2 = sc.nextInt();
+		System.out.print("veuillez saisir un second nombre : ");
+		nombre2 = sc.nextInt();
 		
-		mean = (double) (number1 + number2) / 2;
+		moyenne = (double) (nombre1 + nombre2) / 2;
 		
-		System.out.println("The mean of " + number1 + " and " + number2 + " is " + mean);
+		System.out.println("La moyenne de " + nombre1 + " et " + nombre2 + " est " + moyenne);
 		
 		sc.close();
 		
