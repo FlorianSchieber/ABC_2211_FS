@@ -14,7 +14,7 @@ public class App {
 		double angleDegres;
 		double aire;
 		
-		// DEBUT PROGRAMME
+		//DEBUT PROGRAMME
 		
 		Scanner sc = new Scanner(System.in);
 		
@@ -30,9 +30,9 @@ public class App {
 		
 		System.out.println("L'aire du secteur angulaire de rayon " + rayon + " et d'angle de " + angleDegres + " degres est de : " + aire);
 		
-		
 		sc.close();
 		
+		//FIN PROGRAMME
 		
 	}
 
