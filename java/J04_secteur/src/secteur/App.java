@@ -6,19 +6,19 @@ public class App {
 
 	public static void main(String[] args) {
 
-		//VARIABLES
+		// DECLARTIONS
 		
-		double pi = Math.PI;
+		final double PI = Math.PI;
 		
 		double rayon;
 		double angleDegres;
 		double aire;
 		
-		//DEBUT PROGRAMME
-		
 		Scanner sc = new Scanner(System.in);
 		
-		System.out.println("Programme de calcul de l'aire d'un secteur circulaire");
+		// DEBUT PROGRAMME
+		
+		System.out.println("PROGRAMME DE CALCUL DE L'AIRE D'UN SECTEUR ANGULAIRE\n");
 		
 		System.out.print("Veuillez saisir rayon du cercle : ");
 		rayon = sc.nextDouble();
@@ -26,13 +26,15 @@ public class App {
 		System.out.print("Veuillez saisir l'angle du secteur (en degres) : ");
 		angleDegres = sc.nextDouble();
 		
-		aire = pi * Math.pow(rayon, 2) * angleDegres / 360;
+		System.out.print("\n");
 		
-		System.out.println("L'aire du secteur angulaire de rayon " + rayon + " et d'angle de " + angleDegres + " degres est de : " + aire);
+		aire = PI * Math.pow(rayon, 2) * angleDegres / 360;
+		
+		System.out.println("L'aire du secteur angulaire de rayon " + rayon + " et d'angle de " + angleDegres + " degres est de " + aire);
+		
+		// FIN PROGRAMME
 		
 		sc.close();
-		
-		//FIN PROGRAMME
 		
 	}
 

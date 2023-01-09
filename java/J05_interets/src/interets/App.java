@@ -6,7 +6,7 @@ public class App {
 
 	public static void main(String[] args) {
 
-		// VARIABLES
+		// DECLARATIONS
 
 		int S;
 		double i;
@@ -15,10 +15,10 @@ public class App {
 		int beneficeSimple;
 		int interetCompose;
 		int beneficeCompose;
-
-		// DEBUT PROGRAMME
-
+		
 		Scanner sc = new Scanner(System.in);
+		
+		// DEBUT PROGRAMME
 
 		System.out.println("PROGRAMME DE CALCUL D'INTERET\n");
 
@@ -30,6 +30,8 @@ public class App {
 
 		System.out.print("Veuillez saisir le nombre d'annees de placement de la somme : ");
 		N = sc.nextInt();
+		
+		System.out.print("\n");
 
 		interetSimple = (int) (S * (1 + N * i / 100));
 		interetCompose = (int) (S * Math.pow((1 + i / 100), N));
@@ -37,15 +39,17 @@ public class App {
 		beneficeSimple = interetSimple - S;
 		beneficeCompose = interetCompose - S;
 
-		System.out.println("\nLa \"valeur\" acquise par la somme " + (double) S / 100 + " placee pendant " + N
+		System.out.println("La \"valeur\" acquise par la somme " + (double) S / 100 + " placee pendant " + N
 				+ " annees est de : ");
 		System.out.println((double) interetSimple / 100 + " avec un interet simple, soit un benefice de "
 				+ (double) beneficeSimple / 100);
 		System.out.println((double) interetCompose / 100 + " avec un interet compose, soit un benefice de "
 				+ (double) beneficeCompose / 100);
 
+		// FIN PROGRAMME
+		
 		sc.close();
-
+		
 	}
 
 }

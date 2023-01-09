@@ -3,7 +3,6 @@ package test;
 public class App {
 
 	public static void main(String[] args) {
-		// TODO Auto-generated method stub
 		
 		// System.in  = flux d'entrée
 		// System.out = flux de sortie
