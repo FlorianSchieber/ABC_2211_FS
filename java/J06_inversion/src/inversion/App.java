@@ -18,19 +18,21 @@ public class App {
 		
 		System.out.println("PROGRAMME D'INVERSION DE DEUX VALEURS\n");
 		
-		System.out.print("Veuillez saisir la valeur de a : ");
+		System.out.print("Veuillez saisir la valeur de l'entier a : ");
 		a = sc.nextInt();
 		
-		System.out.print("Veuillez saisir la valeur de b : ");
+		System.out.print("Veuillez saisir la valeur de l'entier b : ");
 		b = sc.nextInt();
 		
 		System.out.print("\n");
+		
+		System.out.println("Avant inversion, la valeur de a est " + a + " et celle de b est " + b);
 		
 		temporaire = a;
 		a = b;
 		b = temporaire;
 		
-		System.out.println("La valeur de a est maintenant " + a + " et celle de b est " + b);
+		System.out.println("Apres inversion, la valeur de a est " + a + " et celle de b est " + b);
 		
 		// FIN PROGRAMME
 		

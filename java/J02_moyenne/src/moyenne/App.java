@@ -18,10 +18,10 @@ public class App {
 		
 		System.out.println("Programme de caclul de la moyenne de deux nombres\n");
 		
-		System.out.print("Veuillez saisir un premier nombre : ");
+		System.out.print("Veuillez saisir un premier nombre entier : ");
 		nombre1 = sc.nextInt();
 		
-		System.out.print("veuillez saisir un second nombre : ");
+		System.out.print("veuillez saisir un second nombre entier : ");
 		nombre2 = sc.nextInt();
 		
 		System.out.print("\n");

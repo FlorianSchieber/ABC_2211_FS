@@ -27,6 +27,10 @@ public class App {
 		else {
 			System.out.print(annee + " n'est pas bissextile");
 		}
+		
+		// FIN PROGRAMME
+		
+		sc.close();
 	}
 
 }
