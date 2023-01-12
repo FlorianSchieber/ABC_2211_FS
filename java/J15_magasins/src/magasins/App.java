@@ -25,7 +25,7 @@ public class App {
 		
 		while (sommeRestante > 0) {
 			
-			if (sommeRestante < 2) {
+			if (sommeRestante < 4) {
 				
 				sommeRestante = 0;
 				
@@ -42,7 +42,9 @@ public class App {
 		
 		System.out.println("Barnabe a achete dans " + magasins + " magasin(s)");
 		
+		// FIN PROGRAMME
 		
+		sc.close();
 		
 	}
 

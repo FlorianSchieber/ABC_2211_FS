@@ -24,7 +24,7 @@ public class App {
 		System.out.print("veuillez saisir un second nombre entier : ");
 		nombre2 = sc.nextInt();
 		
-		System.out.print("\n");
+		System.out.println();
 		
 		moyenne = (double) (nombre1 + nombre2) / 2;
 		

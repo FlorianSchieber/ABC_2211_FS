@@ -19,7 +19,7 @@ public class App {
 		System.out.print("Veuillez saisir une annee : ");
 		annee = sc.nextInt();
 
-		System.out.print("\n");
+		System.out.println();
 		
 		if (annee % 4 == 0 && (annee % 100 != 0 || annee % 400 == 0)) {
 			System.out.print(annee + " est bissextile");

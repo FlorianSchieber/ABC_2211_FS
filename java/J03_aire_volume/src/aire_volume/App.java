@@ -23,7 +23,7 @@ public class App {
 		System.out.print("Veuillez saisir le rayon de la sphere : ");
 		rayon = sc.nextInt();
 		
-		System.out.print("\n");
+		System.out.println();
 		
 		aire = (double) (4 * PI * Math.pow(rayon, 2));
 		volume = (double) (4 / 3 * PI * Math.pow(rayon, 3));

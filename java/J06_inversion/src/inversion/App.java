@@ -24,7 +24,7 @@ public class App {
 		System.out.print("Veuillez saisir la valeur de l'entier b : ");
 		b = sc.nextInt();
 		
-		System.out.print("\n");
+		System.out.println();
 		
 		System.out.println("Avant inversion, la valeur de a est " + a + " et celle de b est " + b);
 		

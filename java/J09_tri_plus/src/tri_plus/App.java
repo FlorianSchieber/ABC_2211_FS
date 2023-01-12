@@ -36,7 +36,7 @@ public class App {
 		System.out.print("Veuillez saisir un troisieme nombre : ");
 		c = sc.nextDouble();
 		
-		System.out.print("\n");
+		System.out.println();
 		
 		if (a < b) {
 			if (b < c) {

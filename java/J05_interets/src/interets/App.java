@@ -37,7 +37,7 @@ public class App {
 		System.out.print("Veuillez saisir le nombre d'annees de placement de la somme : ");
 		annees = sc.nextInt();
 		
-		System.out.print("\n");
+		System.out.println();
 
 		interetSimple = (int) (somme * (1 + annees * interet / 100));
 		interetCompose = (int) (somme * Math.pow((1 + interet / 100), annees));

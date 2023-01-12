@@ -26,7 +26,7 @@ public class App {
 		System.out.print("Veuillez saisir l'angle du secteur (en degres) : ");
 		angleDegres = sc.nextDouble();
 		
-		System.out.print("\n");
+		System.out.println();
 		
 		aire = PI * Math.pow(rayon, 2) * angleDegres / 360;
 		

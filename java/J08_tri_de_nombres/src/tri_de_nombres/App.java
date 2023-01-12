@@ -31,7 +31,7 @@ public class App {
 		System.out.print("Veuillez saisir un second nombre entier : ");
 		b = sc.nextInt();
 
-		System.out.print("\n");
+		System.out.println();
 
 		if (a < b) {
 			afficher(a, b);

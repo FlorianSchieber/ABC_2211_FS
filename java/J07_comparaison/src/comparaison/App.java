@@ -19,7 +19,7 @@ public class App {
 		System.out.print("Veuillez saisir votre age : ");
 		age = sc.nextInt();
 		
-		System.out.print("\n");
+		System.out.println();
 		
 		if (age < 0) {
 			System.out.print("Vous n'etes pas encore ne !");
