@@ -9,7 +9,6 @@ public class App {
 
 		// DECLARATION
 		
-		
 		int km;
 		double miles;
 		String saisie;
