@@ -21,63 +21,59 @@ public class Bouteille {
 		this.estOuverte = false;
 		this.contenu = 0;
 		
+		System.out.println("Voici une nouvelle bouteille : " + this.nom + ". Elle a une capacite de " + this.capacite + " litres.");
+		
 	}
 	
 	// METHODES
-	
-	public String nomComplet() {
-		
-		return "La bouteille " + this.nom;
-		
-	}
 
-	public String ouvrir() {
+	public void ouvrir() {
 		
 		if (!this.estOuverte) { 
 
 			this.estOuverte = true;
 			
-			return this.nomComplet() + " a ete ouverte.";
+			System.out.println(this.nom + " a ete ouverte.");
 			
 		} else {
 			
-			return this.nomComplet() + " est deja ouverte.";
+			System.out.println(this.nom + " est deja ouverte.");
 		}
 
 	}
 
-	public String fermer() {
+	public void fermer() {
 
 		if (this.estOuverte) { 
 
 			this.estOuverte = false;
 			
-			return this.nomComplet() + " a ete fermee.";
+			System.out.println(this.nom + " a ete fermee.");
 			
 		} else {
 			
-			return this.nomComplet() + " est deja fermee.";
+			System.out.println(this.nom + " est deja fermee.");
 		}
 		
 	}
 	
-	public String remplir() {
+	public void remplir() {
 		
 		if (this.estOuverte) {
 			
 			this.contenu = this.capacite;
 			
-			return this.nomComplet() + " a ete entierement remplie.";
+			System.out.println(this.nom + " a ete entierement remplie.");
 		
 		} else {
 			
-			return this.nomComplet() + " n'a pas pu etre remplie car elle est fermee.";
+			System.out.println(this.nom + " n'a pas pu etre remplie car elle est fermee.");
 			
 		}
 		
 	}
 
-	public String remplir(double quantiteAjoutee) {
+	public void remplir(double quantiteAjoutee) {
 		
 		if (this.estOuverte) {
 
@@ -87,26 +83,26 @@ public class Bouteille {
 	
 				this.contenu = this.capacite;
 				
-				return this.nomComplet() + " a deborde, elle est maintenant entierement remplie.";
+				System.out.println(this.nom + " a deborde, elle est maintenant entierement remplie.");
 	
 			} else {
 	
 				this.contenu = futurContenu;
 				
-				return this.nomComplet() + " a ete remplie de " + quantiteAjoutee + " et contient maintenant " + this.contenu + ".";
+				System.out.println(this.nom + " a ete remplie de " + quantiteAjoutee + " litres et contient maintenant " + this.contenu + " litres.");
 				
 			}
 			
 			
 		} else {
 			
-			return this.nomComplet() + " n'a pas pu etre remplie car elle est fermee.";
+			System.out.println(this.nom + " n'a pas pu etre remplie car elle est fermee.");
 			
 		}
 
 	}
 	
-	public String vider() {
+	public void vider() {
 		
 		if (this.estOuverte) {
 			
@@ -114,22 +110,22 @@ public class Bouteille {
 				
 				this.contenu = 0;
 				
-				return this.nomComplet() + " a ete entierement videe.";
+				System.out.println(this.nom + " a ete entierement videe.");
 			
 			} else {
 				
-				return this.nomComplet() + " ne peut pas etre plus vide que vide.";
+				System.out.println(this.nom + " ne peut pas etre plus vide que vide.");
 			}
 		
 		} else {
 			
-			return this.nomComplet() + " n'a pas pu etre videe car elle est fermee.";
+			System.out.println(this.nom + " n'a pas pu etre videe car elle est fermee.");
 			
 		}
 		
 	}
 
-	public String vider(double quantiteOtee) {
+	public void vider(double quantiteOtee) {
 		
 		if (this.estOuverte) {
 			
@@ -141,25 +137,25 @@ public class Bouteille {
 		
 					this.contenu = 0;
 					
-					return this.nomComplet() + " a ete entierement videe.";
+					System.out.println(this.nom + " a ete entierement videe.");
 		
 				} else {
 		
 					this.contenu = futurContenu;
 					
-					return this.nomComplet() + " a ete videe de " + quantiteOtee + " et contient maintenant " + this.contenu + ".";
+					System.out.println(this.nom + " a ete videe de " + quantiteOtee + " litres et contient maintenant " + this.contenu + " litres.");
 					
 				}
 				
 			} else {
 				
-				return this.nomComplet() + " ne peut pas etre plus vide que vide.";
+				System.out.println(this.nom + " ne peut pas etre plus vide que vide.");
 				
 			}
 			
 		} else {
 			
-			return this.nomComplet() + " n'a pas pu etre videe car elle est fermee.";
+			System.out.println(this.nom + " n'a pas pu etre videe car elle est fermee.");
 			
 		}
 		
