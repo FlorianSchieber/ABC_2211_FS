@@ -16,7 +16,7 @@ public class App {
 		PorteLeroyMerlin.verrouiller();
 		System.out.println(PorteLeroyMerlin.toString());
 		
-		PorteLeroyMerlin.fermer(-20);
+		PorteLeroyMerlin.fermer(20);
 		System.out.println(PorteLeroyMerlin.toString());
 		
 		PorteLeroyMerlin.fermer();
