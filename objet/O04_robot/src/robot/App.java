@@ -16,6 +16,9 @@ public class App {
 		
 		robi.reculer(2);
 		System.out.println(robi);
+		
+		robi.tournerAGauche(600000);
+		System.out.println(robi);
 	}
 
 }

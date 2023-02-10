@@ -32,15 +32,23 @@ public class Robot {
 	
 	public boolean tournerAGauche(double deltaAngleEnDegres) {
 		
-		this.angleEnDegres += deltaAngleEnDegres;
+		if (deltaAngleEnDegres > 0) {
 		
-		while (this.angleEnDegres >=360) {
+			this.angleEnDegres += deltaAngleEnDegres;
 			
-			this.angleEnDegres -= 360;
+			while (this.angleEnDegres >=360) {
+				
+				this.angleEnDegres -= 360;
+				
+			}
+			
+			return true;
+		
+		} else {
+			
+			return false;
 			
 		}
-		
-		return true;
 		
 	}
 	
@@ -48,15 +56,23 @@ public class Robot {
 	
 	public boolean tournerADroite(double deltaAngleEnDegres) {
 		
-		this.angleEnDegres -= deltaAngleEnDegres;
+		if (deltaAngleEnDegres > 0) { 
 		
-		while (this.angleEnDegres < 0) {
+			this.angleEnDegres -= deltaAngleEnDegres;
 			
-			this.angleEnDegres += 360;
+			while (this.angleEnDegres < 0) {
+				
+				this.angleEnDegres += 360;
+				
+			}
+			
+			return true;
+		
+		} else {
+		
+			return false;
 			
 		}
-		
-		return true;
 		
 	}
 	
