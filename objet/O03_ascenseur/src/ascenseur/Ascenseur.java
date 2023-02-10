@@ -59,7 +59,8 @@ public class Ascenseur {
 	
 	public boolean monter(int etageCible) {
 		
-		if (etageCible >= this.etageMinimum			// Si l'étage d'appel est valide
+		if (
+				etageCible >= this.etageMinimum			// Si l'étage d'appel est valide
 				&& etageCible <= this.etageMaximum
 				&& etageCible > this.etage			// Si l'ascenseur est en dessous de l'étage d'appel
 				&& !this.porteOuverte				// Si la porte est fermée
@@ -79,7 +80,8 @@ public class Ascenseur {
 	
 	public boolean descendre(int etageCible) {
 		
-		if (etageCible >= this.etageMinimum			// Si l'étage d'appel est valide
+		if (
+				etageCible >= this.etageMinimum			// Si l'étage d'appel est valide
 				&& etageCible <= this.etageMaximum
 				&& etageCible < this.etage			// Si l'ascenseur est au dessus de l'étage d'appel
 				&& !this.porteOuverte				// Si la porte est fermée
