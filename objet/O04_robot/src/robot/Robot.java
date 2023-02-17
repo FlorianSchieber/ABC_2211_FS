@@ -36,7 +36,7 @@ public class Robot {
 		
 			this.angleEnDegres += deltaAngleEnDegres;
 			
-			while (this.angleEnDegres >=360) {
+			while (this.angleEnDegres >= 360) {
 				
 				this.angleEnDegres -= 360;
 				
@@ -256,7 +256,7 @@ public class Robot {
 				+ "\nBras droit leve : " + this.brasDroitLeve
 				+ "\nPince femeee : " + this.pinceFermee
 				+ "\nLanterne allumee : " + this.lanterneAllumee
-				+ "\n---------------------";
+				+ "\n-------------------------------------------";
 		
 		
 	}
